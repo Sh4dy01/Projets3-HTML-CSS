@@ -1,0 +1,19 @@
+.test1{
+  background: red;
+  width: 10%
+}
+
+.test2{
+  background: blue;
+  width: 10%
+}
+
+.test3{
+  background: purple;
+  width: 10%
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
