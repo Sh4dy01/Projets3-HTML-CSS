@@ -1,0 +1,105 @@
+body {
+  background-color: white;
+  background-image:url(../img/home_page.jpg);
+  background-attachment: fixed;
+  margin:0;
+}
+
+.nav-bar{
+  background-color: black;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+.nav-bar a{
+  float: left;
+  text-align: center;
+  color: yellow;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-bar a:hover{
+  color: black;
+  background-color: white;
+}
+
+.nav-bar a.active{
+  color: white;
+}
+
+.nav-bar img{
+  height:50px;
+  text-align: center;
+  float: left;
+  padding: 5px;
+}
+
+.nav-bar .links{
+  float: right;
+  color: black;
+  border: 2px solid #4CAF50; /* couleur à changer*/
+}
+
+.nav-bar .links button{cursor: pointer;}
+
+p{
+  color: #bbb990;
+  font-size: 16px;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.paragraph{
+  text-align: center;
+  width: 80px;
+  border: 4px solid #b45e41;
+  border-radius: 5%;
+  background-color: #141d6c;
+  color: white;
+  padding: 25px;
+}
+
+.title{
+  margin-left: 35%;
+  margin-top: 3%;
+  margin-right: 35%;
+  margin-bottom: auto;
+  border: 4px solid black;
+}
+
+.history{
+  text-align: center;
+  width: 40%;
+  border: 4px solid #b45e41;
+  border-radius: 15%;
+  background-color: #141d6c;
+  color: white;
+  padding: 25px;
+  margin-left: 2%;
+}
+
+.history hr{
+  color: red;
+}
+
+.ptitle{
+  color: #c3a817;
+  font-size: 25px;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.video{
+  width: 560px;
+  height: 315px;
+  border: 4px solid #b45e41;
+}
+
+.mute input[type="image"]{
+  border: 2px solid black;
+  border-radius: 25%;
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+}

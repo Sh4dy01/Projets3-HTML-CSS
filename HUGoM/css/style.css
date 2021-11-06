@@ -59,4 +59,5 @@ html, body{
   width: 25%;
   margin: 20px;
   padding: 10px;
+  background: radial-gradient(white, #9198e5);
 }
