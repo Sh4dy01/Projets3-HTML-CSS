@@ -1,39 +1,62 @@
-.nav-bar{
-  background-color: black;
-  overflow: hidden;
-  top: 0;
+html, body{
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
+.title{
+  height: 500px;
+  border: 1px solid red;
+  text-align: center;
+  background: no-repeat center url("../img/bg.jpg");
+  background-size: cover;
+}
+
+.title h1{
+  text-shadow: 1px 1px 2px purple;
+}
+
+.nav-bar{
+  height: auto;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.nav-bar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #070418;
+  width: 100%;
+}
+
+.nav-bar li{
+  float: left;
+  background-color: #00aed0;
+  border-right: 1px solid #070418;
+}
+
+.nav-bar li:hover{
+  background-color: #04f4f9;
+}
+
 .nav-bar a{
-  float: left;
+  display: block;
+  color: #070418;
   text-align: center;
-  color: yellow;
-  padding: 20px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-.nav-bar a:hover{
-  color: black;
-  background-color: white;
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav-bar a.active{
-  color: white;
+.text{
+  width: 25%;
+  margin: 20px;
+  padding: 10px;
 }
-
-.nav-bar img{
-  height:50px;
-  text-align: center;
-  float: left;
-  padding: 5px;
-}
-
-.nav-bar .links{
-  float: right;
-  color: black;
-  border: 2px solid #4CAF50; /* couleur à changer*/
-}
-
-.nav-bar .links button{cursor: pointer;}
