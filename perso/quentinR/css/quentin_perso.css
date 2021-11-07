@@ -5,9 +5,12 @@ html, body{
 }
 
 
-h2, h3{
-  font-size: 25px;
+h1, h2, h3, h4{
   font-family: 'Cinzel Decorative', cursive;
+}
+
+h1{
+  text-shadow: 1px 1px 2px purple;
 }
 
 h2{
@@ -17,6 +20,10 @@ h2{
 
 h3{
   text-shadow: 3px 2px 3px #dc635b;
+  color: #c3a817;
+}
+
+h4{
   color: #c3a817;
 }
 
@@ -31,19 +38,17 @@ p{
   height: 500px;
   border: 1px solid red;
   text-align: center;
+  align-content: center;
   background: no-repeat center url("../img/bg.jpg");
   background-size: cover;
 }
 
-.title h1{
-  text-shadow: 1px 1px 2px purple;
-}
 
 .nav-bar{
-  height: auto;
+  float: right;
+  top: 40%;
+  overflow: auto;
   position: sticky;
-  top: 0;
-  overflow: hidden;
 }
 
 .nav-bar ul{
@@ -55,21 +60,25 @@ p{
 }
 
 .nav-bar li{
-  float: left;
   background-color: #00aed0;
-  border-right: 1px solid #070418;
+  display: block;
+  color: white;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-bar li i{
+  font-size: 24px;
+  color: blue;
+}
+
+.nav-bar li i::after{
+  content: ''
 }
 
 .nav-bar li:hover{
   background-color: #04f4f9;
-}
-
-.nav-bar a{
-  display: block;
-  color: #070418;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
 .intro{
@@ -80,8 +89,13 @@ p{
   display: flex;
 }
 
-.subtitle{
-  margin: 1%;
+.subtitle {
+  position: sticky; top: 0;
+}
+
+.subtitle h2{
+  margin: 0px;
+  padding: 2%;
   text-align: center;
   font-size: 50px;
 }
@@ -112,6 +126,7 @@ p{
 
 .type{
   display: flex;
+  padding: 3%;
 }
 
 .genre{
@@ -140,17 +155,122 @@ p{
   margin-left: 5%;
 }
 
-.flex{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.collection{
+  background: radial-gradient(#c65465, #f06963, #fe955e);
 }
 
-.text{
-  width: 25%;
-  margin: 20px;
-  padding: 10px;
-  background: radial-gradient(white, #9198e5);
+.kit{
+  display: flex;
+  padding: 3%;
+}
+
+.weapons{
+  margin: 1%;
+  width: 80%;
+  height: auto;
+  border: 4px solid #b45e41;
+  border-radius: 10%;
+  background-color: #141d6c;
+  color: white;
+  padding: 2%;
+  margin-left: 5%;
+}
+
+.weapons h3{
+  text-align: center;
+}
+
+.weapons img{
+  border: 2px solid #ff8800;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 15%;
+  width: 12%;
+  padding: 0.5%;
+  margin-right:1%;
+}
+
+.flex{
+  display: flex;
+}
+
+.gear{
+  margin: 1%;
+  width: 80%;
+  height: auto;
+  border: 4px solid #b45e41;
+  border-radius: 10%;
+  background-color: #141d6c;
+  color: white;
+  padding: 2%;
+  margin-left: 5%;
+}
+
+.gear h3{
+  text-align: center;
+}
+
+.gear img{
+  border: 2px solid #ff8800;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 15%;
+  width: 12%;
+  padding: 0.5%;
+  margin-right:1%;
+}
+
+.ennemies {
+  display: flex;
+  padding: 3%;
+}
+
+.simple{
+  margin: 1%;
+  width: 80%;
+  height: auto;
+  border: 4px solid #b45e41;
+  border-radius: 10%;
+  background-color: #141d6c;
+  color: white;
+  padding: 2%;
+  margin-left: 5%;
+}
+
+.simple h3{
+  text-align: center;
+}
+
+.simple img{
+  border: 2px solid #ff8800;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 15%;
+  height: 90px;
+  padding: 0.5%;
+  margin-right:1%;
+}
+
+.boss{
+  margin: 1%;
+  width: 80%;
+  height: auto;
+  border: 4px solid #b45e41;
+  border-radius: 10%;
+  background-color: #141d6c;
+  color: white;
+  padding: 2%;
+  margin-left: 5%;
+}
+
+.boss h3{
+  text-align: center;
+}
+
+.boss img{
+  border: 2px solid #ff8800;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 15%;
+  height: 170px;
+  padding: 0.5%;
+  margin-right:1%;
 }
 
 .video{
