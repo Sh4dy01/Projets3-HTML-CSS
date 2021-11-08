@@ -85,17 +85,15 @@ p{
   background: radial-gradient(#213268, #3772cf);
 }
 
-.part {
-  display: flex;
-}
 
 .backgb{
     background: url(../img/bg_blue.jpg);
-    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
     height: 450px;
 }
+
 .simple-flex{
   display: flex;
 }
@@ -190,12 +188,62 @@ p{
 }
 
 .history{
-  margin-top: 1%;
+  margin: 5%;
   text-align: center;
-  width: 60%;
-  height: 400px;
+  width: 100%;
+  height: auto;
   border: 4px solid #b45e41;
   border-radius: 10%;
+  color: white;
+  padding: 2%;
+}
+
+.part {
+  width: 100%;
+  display: flex;
+}
+
+.global{
+  width: 100%;
+}
+.type{
+  width: 100%;
+  display: flex;
+}
+
+.screen{
+  width: 100%;
+  height: auto;
+}
+
+.screen img{
+  margin-top: 7%;
+  margin-left: 10%;
+  max-width: 70%;
+  max-height: 300px;
+}
+
+.genre{
+  margin: 1%;
+  text-align: center;
+  width: 25%;
+  height: auto;
+  border: 4px solid #b45e41;
+  border-radius: 10%;
+  background-color: #141d6c;
+  color: white;
+  padding: 2%;
+  margin-left: 5%;
+}
+
+.goal{
+  margin: 1%;
+  text-align: center;
+  width: 25%;
+  height: auto;
+  border: 4px solid #b45e41;
+  border-radius: 10%;
+  background-color: #141d6c;
   color: white;
   padding: 2%;
   margin-left: 5%;
@@ -242,52 +290,12 @@ p{
   background: radial-gradient(white, #9198e5);
 }
 
-.screen{
-  width: 30%;
-  height: 400px;
-}
 
-.screen img{
-  margin-top: 7%;
-  margin-left: 10%;
-  max-width: 70%;
-  max-height: 300px;
-}
-
-.type{
-  display: flex;
-  padding: 3%;
-}
-
-.genre{
-  margin: 1%;
-  text-align: center;
-  width: 25%;
-  height: auto;
-  border: 4px solid #b45e41;
-  border-radius: 10%;
-  background-color: #141d6c;
-  color: white;
-  padding: 2%;
-  margin-left: 5%;
-}
-
-.goal{
-  margin: 1%;
-  text-align: center;
-  width: 25%;
-  height: auto;
-  border: 4px solid #b45e41;
-  border-radius: 10%;
-  background-color: #141d6c;
-  color: white;
-  padding: 2%;
-  margin-left: 5%;
-}
 
 .backg{
     background: url(../img/bannier_orange.jpg);
-    background-position: top;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     width: 100%;
     height: 450px;
