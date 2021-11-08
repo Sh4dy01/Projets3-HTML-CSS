@@ -168,7 +168,7 @@ p{
 }
 
 .media img:hover{
-  transform: scale(1.7) translate(25%);
+  transform: scale(1.5) translate(25%);
   cursor: zoom-in;
   filter: none;
 }
@@ -222,7 +222,7 @@ p{
 }
 
 .bbiome .media img:hover{
-  transform: scale(1.7) translate(-25%);
+  transform: scale(1.5) translate(-25%);
 }
 
 .bbiome .corps{
@@ -244,10 +244,6 @@ p{
   background: linear-gradient(90deg, rgba(72,102,50,1) 0%, rgba(72,102,50,0) 100%);
 }
 
-.gbiome .content p{
-  color: white;
-}
-
 /* ------ COLLECTION ------ */
 
 .obiome .bg{
@@ -257,52 +253,117 @@ p{
 
 .obiome .corps{
   background: radial-gradient(#c65465, #f06963, #fe955e);
+  height: auto;
+}
+
+.obiome .content{
+  width: 90%;
+  margin-bottom: auto;
+}
+
+.exemple{
+  text-decoration: underline;
+  text-align: center;
+  font-size: 20px;
 }
 
 .obiome .big-box{
-  padding: 2%;
+  text-align: left;
   margin: 1%;
-  width: 30%;
-  height: auto;
+  width: 40%;
+  overflow-y: scroll;
   background-color: #141d6c;
   margin-left: 5%;
+}
+
+.obiome h3{
+  font-size: 40px;
 }
 
 .obiome img{
   border: 2px solid #ff8800;
   border-top-right-radius: 30%;
   border-bottom-left-radius: 15%;
-  min-width: 12%;
   padding: 0.5%;
   margin-right:1%;
 }
 
-.obiome .boss1-image
-
-.bosses .gifs{
-  display: flex;
-  width: 35%;
+.obiome .weapons img{
+  width: 90px;
+  height: 90px;
 }
 
-.bosses .gifs img{
+.obiome .ennemies img{
+  width: 200px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.obiome .bosses img{
+  border: 1px solid #ff8800;
+  padding: 0.5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.obiome .bosses .media{
+  display: flex;
+  box-shadow: unset;
+}
+
+.obiome .bosses .boss1-pic img{
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 15%;
+  height: 150px;
+}
+
+.obiome .bosses .boss2-pic img{
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  height: 150px;
+}
+
+.obiome .bosses .boss3-pic img{
+  border-top-right-radius: 55%;
+  height: 170px;
+}
+
+.obiome .bosses .media img{
   margin-top: 10%;
+  padding: 0;
+  max-width: 80%;
+  margin-right: 30%;
+  box-shadow: 0px 0px 16px rgb(0 0 0 / 75%);
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.obiome .bosses .boss1 .media img{
   margin-left: 10%;
   margin-right: 21.5%;
-  max-width: 60%;
-  max-height: 100px;
-  filter: blur(1px);
-  border: 1px solid #b45e41;
-  box-shadow: 0px 0px 16px rgb(0 0 0 / 75%);
+  max-width: 70%;
 }
 
-.bosses .gifs img:hover{
-  transform: scale(2) translateY(6%);
-  filter: none;
+.obiome .bosses .boss2 .media img{
+  margin-left: 25%;
 }
 
-.bosses .boss img:hover{
-  transform: scale(2.35) translateY(-12%);
-  filter: none;
+.obiome .bosses .boss3 .media img{
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+.obiome .boss1 .media img:hover{
+  transform: scale(2.5) translateX(-16%) translateY(-20%);
+}
+
+.obiome .boss2 .media img:hover{
+  transform: scale(2.5) translateX(-20%) translateY(-20%);
+}
+
+.obiome .boss3 .media img:hover{
+  transform: scale(3) translateX(-20%) translateY(-10%);
 }
 
 /* ------ INFO ------ */
