@@ -110,7 +110,8 @@ a{
 }
 
 .right{
-  margin-left: 35%;
+  margin-left: 32.5%;
+  margin-right: 50px;
 }
 
 .sub-div{
@@ -122,7 +123,6 @@ a{
   background-color: #141d6c;
   color: white;
   padding: 2%;
-  margin-right: 5%;
 }
 
 .subtitle{
@@ -182,9 +182,10 @@ a{
   border-left: 1px black solid;
 }
 
-.contact form{
-  width: 400px;
+.contact .subtitle{
+  font-size: 30px;
 }
+
 
 .contact form div{
   margin-top: 3%;
@@ -213,7 +214,7 @@ a{
 }
 
 .contact form .button{
-  margin-left: 50%;
+  margin-left: 25%;
 }
 
 .info{
