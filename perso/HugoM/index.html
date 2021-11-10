@@ -10,24 +10,34 @@
     <title>Dead Cells : un die-and-retry pas comme les autres</title>
     <meta name="description" content="Un site pour promouvoir le jeu Dead Cells">
   </head>
+
+  <header>
+    <div class="title">
+      <video autoplay muted loop id="bgVideo">
+        <source src="vids/bg_vid.mp4" type="video/mp4">
+      </video>
+    </div>
+    <audio controls loop autoplay muted>
+      <source src="audio/01_Dead_Cells.mp3" type="audio/mpeg">
+    </audio>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#top"><i class="material-icons">arrow_drop_up</i><br>Top</a></li>
+        <li><a href="#introduction"><i class="material-icons">library_books</i><br>Le jeu</a></li>
+        <li><a href="#description"><i class="material-icons">description</i><br>Le gameplay</a></li>
+        <li><a href="#collections"><i class="material-icons">collections</i><br>La collection</a></li>
+        <li><a href="#bottom"><i class="material-icons">arrow_drop_down</i><br>Nous contactez</a></li>
+        <li><a href="https://dead-cells.com/" target="_blank" rel="nofollow"><i class="material-icons">link</i><br>Lien du jeu</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <body>
-    <div class="title flex" id="top">
-      <h1>DEAD CELLS</h1>
-    </div>
-    <div class="nav-bar">
-      <nav>
-        <ul>
-          <li><a href="#top"><i class="material-icons">arrow_drop_up</i></a></li>
-          <li><a href="#introduction"><i class="material-icons">library_books</i></a></li>
-          <li><a href="#description"><i class="material-icons">description</i></a></li>
-          <li><a href="#collections"><i class="material-icons">collections</i></a></li>
-          <li><a href="#bottom"><i class="material-icons">arrow_drop_down</i></a></li>
-          <li><a href="https://dead-cells.com/" target="_blank" rel="nofollow"><i class="material-icons">link</i></a></li>
-        </ul>
-      </nav>
-    </div>
     <div class="bbiome">
       <div class="bg">
+        <div class="fade">
+          <img src="img/b-flou-topt-vertical.png" alt="">
+        </div>
       </div>
       <div class="corps" id="introduction">
         <div class="subtitle">
@@ -43,17 +53,17 @@
               L'aventure du héros commence ici : le joueur incarne un corps décapité qui s'est fait envahir par un parasite et va chercher à se venger du roi.</p>
             </div>
             <div class="simple-flex">
-                <div class="sub-div left border-box">
-                  <h3>Le genre</h3>
-                  <hr>
-                  <p>Dead Cells est un jeu de plateforme, d'action ainsi que rogue-lite inspiré de l'univers de Castlevania.
-                  <br>Vous aurez la possibilité d'explorer un énorme château en constante évolution… en supposant que vous puissiez vous frayer un chemin contre ses gardiens.</p>
-                </div>
-                <div class="sub-div right border-box">
-                  <h3>Une Finalité ?</h3>
-                  <hr>
-                  <p>L'objectif sera de réussir à sortir du château généré aléatoirement à chaque partie pour espérer atteindre le boss final et venger ce peuple détruit.</p>
-                </div>
+              <div class="sub-div left border-box">
+                <h3>Le genre</h3>
+                <hr>
+                <p>Dead Cells est un jeu de plateforme, d'action ainsi que rogue-lite inspiré de l'univers de Castlevania.
+                <br>Vous aurez la possibilité d'explorer un énorme château en constante évolution… en supposant que vous puissiez vous frayer un chemin contre ses gardiens.</p>
+              </div>
+              <div class="sub-div right border-box">
+                <h3>Une Finalité ?</h3>
+                <hr>
+                <p>L'objectif sera de réussir à sortir du château généré aléatoirement à chaque partie pour espérer atteindre le boss final et venger ce peuple détruit.</p>
+              </div>
             </div>
           </div>
           <div class="media">
@@ -64,15 +74,22 @@
         </div>
       </div>
       <div class="bg">
-        <div class="space">
+        <div class="fade">
+          <img src="img/gb-flou-top-vertical.png" alt="">
         </div>
         <div class="video">
-          <iframe width="784" height="400" src="https://www.youtube.com/embed/RvGaSPTcTxc" title="Trailer du jeu Dead Cells" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/RvGaSPTcTxc" title="Trailer du jeu Dead Cells" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="fade">
+          <img src="img/b-flou-topt-vertical.png" alt="">
         </div>
       </div>
     </div>
     <div class="gbiome">
       <div class="bg">
+        <div class="transition">
+          <img src="img/g-transition.png" alt="">
+        </div>
       </div>
       <div class="corps" id="description">
         <div class="subtitle">
@@ -93,12 +110,12 @@
                 Parmis les <strong>innombrables biomes</strong> tous unique les uns que les autres, vous avez la possibilité de choisir votre chemin, <br><i>Préférez-vous traverser les égouts toxiques ? ou bien de passer par le toit de la prison où vous étiez enfermé ?</i><br><br>Petit à petit vous vous rapprocherez de la vérité tout en découvrant les secrets les plus noirs.</p>
               </div>
               <div class="simple-flex">
-                <div class="sub-div-left border-box">
+                <div class="sub-div left border-box">
                   <h3>Progression non-linéaire</h3>
                   <hr>
                   <p>Le charme de <strong>Dead Cells</strong> se trouve dans sa <strong>progression</strong>, vu que la mort sera récurrent, le royaume quant à lui n'est jamais le même, seule ce que vous aurez gardé en mémoire avant votre mort resteront pour votre prochain corps.</p>
                 </div>
-                <div class="sub-div-right border-box">
+                <div class="sub-div right border-box">
                   <h3>Souls-lite combat</h3>
                   <hr>
                   <p>Tout élément du jeu étant unique, l'approche que vous devrez utiliser contre chaque ennemie/boss sera différente et le gameplay de chaque arme/équipement/sort rendra votre run encore plus jouissive que votre précedente. </p>
@@ -108,10 +125,14 @@
           </div>
         </div>
       <div class="bg">
-        <div class="space">
+        <div class="fade">
+          <img src="img/g-flou-bot-vertical.png" alt="">
         </div>
         <div class="video">
-          <iframe width="784" height="400" src="https://www.youtube.com/embed/yXK00t3HABA" title="Gameplay de Dead Cells" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/yXK00t3HABA" title="Gameplay de Dead Cells" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="fade">
+          <img src="img/o-flou-top-vertical.png" alt="">
         </div>
       </div>
     </div>
