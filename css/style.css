@@ -304,8 +304,7 @@ p{
 }
 
 .slides {
-  width: 400px;
-  height: auto;
+  width: 40%;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -328,7 +327,7 @@ p{
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 400px;
-  height: 400px;
+  height: auto;
   margin-right: 50px;
   border-radius: 10px;
   background: #eee;
