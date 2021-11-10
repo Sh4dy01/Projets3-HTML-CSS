@@ -173,9 +173,6 @@ p{
   filter: none;
 }
 
-.video{
-  visibility: hidden;
-}
 
 /* ------ Navigation bar ------ */
 
@@ -242,6 +239,18 @@ p{
 
 .gbiome .media{
   background: linear-gradient(90deg, rgba(72,102,50,1) 0%, rgba(72,102,50,0) 100%);
+}
+
+.space{
+  height: 25px;
+}
+
+.video{
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 784px;
+  height: 400px;
+  box-shadow: 0px 0px 20px 16px #a8328b;
 }
 
 /* ------ COLLECTION ------ */
