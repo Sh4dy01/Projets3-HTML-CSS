@@ -131,29 +131,25 @@ p{
   color: white;
 }
 
-.content .sub-div-left{
+.content .sub-div{
   margin-left: 0;
   margin-top: 5%;
   text-align: center;
   height: auto;
   color: white;
   padding: 2%;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
   width: 50%;
 }
 
-.content .sub-div-right{
-  margin-left: 0;
-  margin-top: 5%;
-  text-align: center;
-  height: auto;
-  color: white;
-  padding: 2%;
+.content .left{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.content .right{
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: 0;
-  width: 50%;
 }
 
 .media img{
@@ -173,6 +169,16 @@ p{
   filter: none;
 }
 
+.space{
+  height: 25px;
+}
+
+.video{
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 784px;
+  height: 400px;
+}
 
 /* ------ Navigation bar ------ */
 
@@ -226,10 +232,14 @@ p{
   background: linear-gradient(90deg, rgba(24,64,108,1) 0%, rgba(55,117,179,1) 30%, rgba(55,117,179,1) 80%, rgba(24,64,108,1) 100%);
 }
 
+.bbiome .video{
+  box-shadow: 0px 0px 20px 16px #a8328b;
+}
+
 /* ------ DESCRIPTION ------ */
 
 .gbiome .bg{
-  background-image: url(../img/green.jpeg);
+  background-image: url(../img/green.jpg);
   border-bottom: 2px darkgreen solid;
 }
 
@@ -241,16 +251,8 @@ p{
   background: linear-gradient(90deg, rgba(72,102,50,1) 0%, rgba(72,102,50,0) 100%);
 }
 
-.space{
-  height: 25px;
-}
-
-.video{
-  margin-left: 30%;
-  margin-right: 30%;
-  width: 784px;
-  height: 400px;
-  box-shadow: 0px 0px 20px 16px #a8328b;
+.gbiome .video{
+  box-shadow: 0px 0px 20px 16px #3ADEB8;
 }
 
 /* ------ COLLECTION ------ */
