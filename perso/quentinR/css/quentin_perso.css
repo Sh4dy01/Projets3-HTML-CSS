@@ -276,15 +276,9 @@ p{
   font-size: 20px;
 }
 
-.simple-flex{
+.simple-flex-a{
   display: flex;
-}
-
-.slides h4{
-  position: absolute;
-  margin-bottom: 60%;
-  margin-right: 65%;
-  font-size: 30%;
+  justify-content: space-evenly;
 }
 
 .slides p{
@@ -381,30 +375,72 @@ p{
   }
 }
 
-Resources1× 0.5× 0.25×Rerun
+.weapon h4{
+  position: absolute;
+  margin-bottom: 40%;
+  font-size: 30%;
+}
 
-.weapon .bow img{
+.weapon .arc h4{
+  margin-right: 85%;
+}
+
+.weapon img{
   margin-top: 20%;
   height: auto;
   width: 50%;
 }
 
-.weapon .bouclier img{
+.weapon .bouclier h4{
+  margin-right: 60%;
+}
+
+.weapon .epee h4{
+  margin-right: 85%;
+}
+
+.weapon .poele h4{
+  margin-right: 78%;
+}
+
+
+.gear h4{
+  position: absolute;
+  margin-bottom: 40%;
+  font-size: 30%;
+}
+
+.gear img{
   margin-top: 20%;
   height: auto;
   width: 50%;
 }
 
-.weapon .epee img{
-  margin-top: 20%;
-  height: auto;
-  width: 50%;
+.gear .grenade h4{
+  margin-right: 63%;
 }
 
-.weapon .poele img{
-  margin-top: 20%;
-  height: auto;
-  width: 50%;
+
+.gear .piege h4{
+  margin-right: 80%;
+}
+
+.gear .tourelle h4{
+  margin-right: 25%;
+}
+
+.gear .sort h4{
+  margin-right: 80%;
+}
+
+.enemy h4{
+  position: absolute;
+  margin-bottom: 60%;
+  font-size: 30%;
+}
+
+.enemy .zombie h4{
+  margin-right: 65%;
 }
 
 .enemy .zombie img{
@@ -413,10 +449,18 @@ Resources1× 0.5× 0.25×Rerun
   width: auto;
 }
 
+.enemy .grenadier h4{
+  margin-right: 55%;
+}
+
 .enemy .grenadier img{
   margin-top: 20%;
   height: 200px;
   width: auto;
+}
+
+.enemy .runner h4{
+  margin-right: 66%;
 }
 
 .enemy .runner img{
@@ -425,10 +469,79 @@ Resources1× 0.5× 0.25×Rerun
   width: 280%;
 }
 
+.enemy .demolisseur h4{
+  margin-right: 48%;
+}
+
 .enemy .demolisseur img{
   margin-top: 20%;
   height: auto;
   width: 250%;
+}
+
+.boss h4{
+  position: absolute;
+  margin-bottom: 60%;
+  font-size: 30%;
+}
+
+.boss .zombie h4{
+  margin-right: 65%;
+}
+
+.boss .boss1-pic img{
+  margin-top: 70%;
+  height: 140px;
+  width: auto;
+}
+
+.boss .geant h4{
+  margin-right: 55%;
+}
+
+.boss .boss2-pic img{
+  margin-top: 40%;
+  height: 125px;
+  width: auto;
+}
+
+.boss .geant p{
+  margin-top: 40%;
+}
+
+.boss .runner h4{
+  margin-right: 66%;
+}
+
+.boss .hand img{
+  margin-top: 20%;
+  height: auto;
+  width: 280%;
+}
+
+.geant .media{
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 50%);
+  border-radius: 5%;
+  width: 60%;
+  height: auto;
+}
+
+.boss .media img{
+  filter: blur(2px);
+  border: 2px solid #a72a2f;
+  box-shadow: 0px 0px 16px rgb(0 0 0 / 75%);
+  align-items: center;
+  margin: 5%;
+  margin-left: 10%;
+  max-width: 65%;
+  max-height: 300px;
+}
+
+.geant .media img:hover{
+  transform: scale(2.5) translateX(-20%);
+  cursor: zoom-in;
+  filter: none;
+  z-index: 1;
 }
 
 .obiome h3{
@@ -443,71 +556,9 @@ Resources1× 0.5× 0.25×Rerun
   margin-right:1%;
 }
 
-.obiome .bosses img{
-  border: 1px solid #ff8800;
-  padding: 0.5%;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 2%;
-}
-
-.obiome .bosses .media{
+.obiome .boss .media{
   display: flex;
   box-shadow: unset;
-}
-
-.obiome .bosses .boss1-pic img{
-  border-top-right-radius: 30%;
-  border-bottom-left-radius: 15%;
-  height: 150px;
-}
-
-.obiome .bosses .boss2-pic img{
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  height: 150px;
-}
-
-.obiome .bosses .boss3-pic img{
-  border-top-right-radius: 55%;
-  height: 170px;
-}
-
-.obiome .bosses .media img{
-  margin-top: 10%;
-  padding: 0;
-  max-width: 80%;
-  margin-right: 30%;
-  box-shadow: 0px 0px 16px rgb(0 0 0 / 75%);
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.obiome .bosses .boss1 .media img{
-  margin-left: 10%;
-  margin-right: 21.5%;
-  max-width: 70%;
-}
-
-.obiome .bosses .boss2 .media img{
-  margin-left: 25%;
-}
-
-.obiome .bosses .boss3 .media img{
-  margin-top: 5%;
-  margin-left: 25%;
-}
-
-.obiome .boss1 .media img:hover{
-  transform: scale(2.5) translateX(-16%) translateY(-20%);
-}
-
-.obiome .boss2 .media img:hover{
-  transform: scale(2.5) translateX(-20%) translateY(-20%);
-}
-
-.obiome .boss3 .media img:hover{
-  transform: scale(3) translateX(-20%) translateY(-10%);
 }
 
 /* ------ INFO ------ */
