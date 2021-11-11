@@ -43,13 +43,17 @@ p{
   justify-content: center;
 }
 
+.space-flex{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .simple-flex{
   display: flex;
 }
 
 .title{
   height: 980px;
-  border: 1px solid red;
   text-align: center;
 }
 
@@ -173,6 +177,7 @@ p{
   transform: scale(1.5) translate(25%);
   cursor: zoom-in;
   filter: none;
+  z-index: 1;
 }
 
 .fade{
@@ -214,9 +219,9 @@ p{
 }
 
 .nav-bar li{
-  background-color: transparent;
   vertical-align: middle;
-  width: 70px;
+  width: 80px;
+  height: 28px;
   text-align: center;
 }
 
@@ -231,7 +236,14 @@ p{
 }
 
 .nav-bar li:hover{
-  background-color: #04f4f9;
+  background-image: url(../img/energy-ball.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.music-player{
+  top:0;
+  position: fixed;
 }
 
 /* ------ INTRODUCTION ------ */
@@ -263,7 +275,7 @@ p{
 }
 
 .gbiome .corps{
-  background: linear-gradient(0deg, rgba(72,102,50,1) 0%, rgba(96,133,64,1) 10%, rgba(96,133,64,1) 90%, rgba(72,102,50,1) 100%);
+  background: linear-gradient(0deg, rgba(32,67,40,1) 8%, rgba(58,100,36,1) 39%, rgba(121,161,64,1) 69%, rgba(200,203,79,1) 99%);
 }
 
 .gbiome .media{
@@ -281,7 +293,7 @@ p{
 }
 
 .obiome .corps{
-  background: radial-gradient(#c65465, #f06963, #fe955e);
+  background: linear-gradient(0deg, rgba(157,21,52,1) 5%, rgba(241,136,66,1) 65%, rgba(255,229,124,1) 95%);
   height: auto;
 }
 
@@ -290,26 +302,266 @@ p{
   margin-bottom: auto;
 }
 
+.obiome .media{
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 50%);
+  border-radius: 5%;
+  width: 40%;
+  height: auto;
+  display: flex;
+  box-shadow: unset;
+}
+
 .exemple{
   text-decoration: underline;
   text-align: center;
   font-size: 20px;
 }
 
-.obiome .big-box{
-  text-align: left;
-  margin: 1%;
+.media-slide{
+  box-shadow: 0px 0px 16px rgb(0 0 0 / 50%);
+  border-radius: 10%;
+  margin-left: 20%;
+  margin-top: 5%;
+  width: 65%;
+  height: auto;
+}
+
+.slider {
   width: 40%;
-  overflow-y: scroll;
-  background-color: #141d6c;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5%;
+  margin-bottom: 2%;
+}
+
+.slides {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 5%;
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: rgba(78,77,77,0.2);
+}
+
+.slides p{
+  margin-top: 25%;
+  text-align: left;
+  font-size: 16%;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 400px;
+  height: auto;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: rgb(0 0 0 / 0%);
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 100px;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+.slider > a:active {
+  top: 1px;
+}
+
+.slider > a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+
+.slides h4{
+  position: absolute;
+  margin-bottom: 40%;
+  font-size: 30%;
+  color: #280000;
+}
+
+.slides img{
+  margin-top: 20%;
+  height: auto;
+  width: 50%;
+  margin-right: 85%;
+  background-color: #00000054;
+}
+
+.weapon .bouclier h4{
+  margin-right: 60%;
+}
+
+.weapon .poele h4{
+  margin-right: 78%;
+}
+
+.gear .grenade h4{
+  margin-right: 63%;
+}
+
+.gear .piege h4{
+  margin-right: 80%;
+}
+
+.gear .tourelle h4{
+  margin-right: 25%;
+}
+
+.gear .sort h4{
+  margin-right: 80%;
+}
+
+.enemy h4{
+  margin-bottom: 60%;
+}
+
+.enemy .zombie h4{
+  margin-right: 65%;
+}
+
+.enemy .zombie img{
+  height: 200px;
+  width: auto;
+}
+
+.enemy .grenadier h4{
+  margin-right: 55%;
+}
+
+.enemy .grenadier img{
+  height: 200px;
+  width: auto;
+}
+
+.enemy .runner h4{
+  margin-right: 66%;
+}
+
+.enemy .runner img{
+  height: auto;
+  width: 280%;
+}
+
+.enemy .demolisseur h4{
+  margin-right: 48%;
+}
+
+.enemy .demolisseur img{
+  height: auto;
+  width: 250%;
+}
+
+.boss h4{
+  margin-bottom: 60%;
+}
+
+.boss .concierge h4{
+  width: 60%;
+  margin-right: 43%;
+}
+
+.boss .boss1-pic img{
+  margin-top: 70%;
+  height: 140px;
+  width: auto;
+}
+
+.concierge .media img:hover{
+  transform: scale(2.8) translateX(-17%);
+}
+
+.boss .geant h4{
+  margin-right: 55%;
+}
+
+.boss .boss2-pic img{
+  margin-top: 40%;
+  height: 125px;
+  width: auto;
+}
+
+.boss .geant p{
+  margin-top: 30%;
+}
+
+.geant .media{
+  width: 60%;
+}
+
+.geant .media img:hover{
+  transform: scale(2.5) translateX(-20%);
+}
+
+.boss .hand img{
+  height: auto;
+  width: 280%;
+}
+
+.boss .hand h4{
+  width: 65%;
+  margin-right: 35%;
+}
+
+.boss .hand p{
+  margin-top: 50%;
+}
+
+.boss .boss3-pic img{
+  margin-top: 50%;
+  height: 125px;
+  width: auto;
+}
+
+.hand .media{
   margin-left: 5%;
+  width: 60%;
+}
+
+.hand .media img:hover{
+  transform: scale(3) translateX(-25%) translateY(-10%);
 }
 
 .obiome h3{
   font-size: 40px;
 }
 
-.obiome img{
+.obiome .slides img{
   border: 2px solid #ff8800;
   border-top-right-radius: 30%;
   border-bottom-left-radius: 15%;
@@ -317,109 +569,34 @@ p{
   margin-right:1%;
 }
 
-.obiome .weapons img{
-  width: 90px;
-  height: 90px;
-}
-
-.obiome .ennemies img{
-  width: 200px;
-  height: 90px;
-  object-fit: contain;
-}
-
-.obiome .bosses img{
-  border: 1px solid #ff8800;
-  padding: 0.5%;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 2%;
-}
-
-.obiome .bosses .media{
-  display: flex;
-  box-shadow: unset;
-}
-
-.obiome .bosses .boss1-pic img{
-  border-top-right-radius: 30%;
-  border-bottom-left-radius: 15%;
-  height: 150px;
-}
-
-.obiome .bosses .boss2-pic img{
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  height: 150px;
-}
-
-.obiome .bosses .boss3-pic img{
-  border-top-right-radius: 55%;
-  height: 170px;
-}
-
-.obiome .bosses .media img{
-  margin-top: 10%;
-  padding: 0;
-  max-width: 80%;
-  margin-right: 30%;
-  box-shadow: 0px 0px 16px rgb(0 0 0 / 75%);
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.obiome .bosses .boss1 .media img{
-  margin-left: 10%;
-  margin-right: 21.5%;
-  max-width: 70%;
-}
-
-.obiome .bosses .boss2 .media img{
-  margin-left: 25%;
-}
-
-.obiome .bosses .boss3 .media img{
-  margin-top: 5%;
-  margin-left: 25%;
-}
-
-.obiome .boss1 .media img:hover{
-  transform: scale(2.5) translateX(-16%) translateY(-20%);
-}
-
-.obiome .boss2 .media img:hover{
-  transform: scale(2.5) translateX(-20%) translateY(-20%);
-}
-
-.obiome .boss3 .media img:hover{
-  transform: scale(3) translateX(-20%) translateY(-10%);
-}
-
 /* ------ INFO ------ */
 
 .info{
   display: flex;
   background: linear-gradient(0deg, rgba(92,92,92,1) 90%, rgba(64,64,64,1) 100%);
-  border: 1px red solid;
   height: 600px;
 }
 
-.info .about-us{
+.about-us{
   margin: auto;
+  padding: 5%;
 }
 
 .contact{
   color: white;
   padding: 50px;
   margin: auto;
-  margin-top: 0;
-  margin-bottom: 0;
   width: 30%;
   border-left: 1px black solid;
+  text-align: center;
 }
 
 .contact .subtitle{
   font-size: 30px;
+}
+
+.contact form{
+  margin-right: 15%;
 }
 
 .contact form div{

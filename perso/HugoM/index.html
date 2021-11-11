@@ -12,31 +12,34 @@
   </head>
 
   <header>
-    <div class="title">
+    <div class="title" id="header">
       <video autoplay muted loop id="bgVideo">
         <source src="vids/bg_vid.mp4" type="video/mp4">
       </video>
     </div>
-    <audio controls loop autoplay muted>
-      <source src="audio/01_Dead_Cells.mp3" type="audio/mpeg">
-    </audio>
     <nav class="nav-bar">
       <ul>
-        <li><a href="#top"><i class="material-icons">arrow_drop_up</i><br>Top</a></li>
-        <li><a href="#introduction"><i class="material-icons">library_books</i><br>Le jeu</a></li>
-        <li><a href="#description"><i class="material-icons">description</i><br>Le gameplay</a></li>
-        <li><a href="#collections"><i class="material-icons">collections</i><br>La collection</a></li>
-        <li><a href="#bottom"><i class="material-icons">arrow_drop_down</i><br>Nous contactez</a></li>
-        <li><a href="https://dead-cells.com/" target="_blank" rel="nofollow"><i class="material-icons">link</i><br>Lien du jeu</a></li>
+        <li><a href="#header"><i class="material-icons">arrow_drop_up</i><br></a></li>
+        <li><a href="#introduction"><i class="material-icons">library_books</i><br></a></li>
+        <li><a href="#description"><i class="material-icons">description</i><br></a></li>
+        <li><a href="#collections"><i class="material-icons">collections</i><br></a></li>
+        <li><a href="#footer"><i class="material-icons">arrow_drop_down</i><br></a></li>
+        <li><a href="https://dead-cells.com/" target="_blank" rel="nofollow"><i class="material-icons">link</i><br></a></li>
       </ul>
     </nav>
+    <div class="music-player">
+      <audio controls loop autoplay>
+        <source src="audio/01_Dead_Cells.ogg" type="audio/ogg">
+      </audio>
+    </div>
+    </li>
   </header>
 
   <body>
     <div class="bbiome">
       <div class="bg">
-        <div class="fade">
-          <img src="img/b-flou-topt-vertical.png" alt="">
+        <div class="transition">
+          <img src="img/b-transition.png" alt="">
         </div>
       </div>
       <div class="corps" id="introduction">
@@ -57,7 +60,7 @@
                 <h3>Le genre</h3>
                 <hr>
                 <p>Dead Cells est un jeu de plateforme, d'action ainsi que rogue-lite inspiré de l'univers de Castlevania.
-                <br>Vous aurez la possibilité d'explorer un énorme château en constante évolution… en supposant que vous puissiez vous frayer un chemin contre ses gardiens.</p>
+                <br>Vous aurez la possibilité d'explorer un énorme château en constante évolution... En supposant que vous puissiez vous frayer un chemin contre ses gardiens.</p>
               </div>
               <div class="sub-div right border-box">
                 <h3>Une Finalité ?</h3>
@@ -75,16 +78,17 @@
       </div>
       <div class="bg">
         <div class="fade">
-          <img src="img/gb-flou-top-vertical.png" alt="">
+          <img src="img/bb-flou-top-vertical.png" alt="">
         </div>
         <div class="video">
           <iframe src="https://www.youtube.com/embed/RvGaSPTcTxc" title="Trailer du jeu Dead Cells" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="fade">
-          <img src="img/b-flou-topt-vertical.png" alt="">
+          <img src="img/b-flou-top-vertical.png" alt="">
         </div>
       </div>
     </div>
+
     <div class="gbiome">
       <div class="bg">
         <div class="transition">
@@ -107,18 +111,18 @@
                 <hr>
                 <p>Dans Dead Cells, vous aurez besoin de beaucoup d'agilité pour avoir une chance d'explorer toutes les différentes parties du royaume. Etant à la recherche d'équipement pour assouvir votre soif de vengeance, l'exploration vous récompensera avec un énorme panel d'armes/équipements/sorts divers et variés.
                 <br><br><br>
-                Parmis les <strong>innombrables biomes</strong> tous unique les uns que les autres, vous avez la possibilité de choisir votre chemin, <br><i>Préférez-vous traverser les égouts toxiques ? ou bien de passer par le toit de la prison où vous étiez enfermé ?</i><br><br>Petit à petit vous vous rapprocherez de la vérité tout en découvrant les secrets les plus noirs.</p>
+                Parmis les <strong>innombrables biomes</strong> tous unique les uns que les autres, vous avez la possibilité de choisir votre chemin, <br><i>Préférez-vous traverser les égouts toxiques ? Ou bien de passer par le toit de la prison où vous étiez enfermé ?</i><br><br>Petit à petit vous vous rapprocherez de la vérité tout en découvrant les secrets les plus noirs.</p>
               </div>
               <div class="simple-flex">
                 <div class="sub-div left border-box">
                   <h3>Progression non-linéaire</h3>
                   <hr>
-                  <p>Le charme de <strong>Dead Cells</strong> se trouve dans sa <strong>progression</strong>, vu que la mort sera récurrent, le royaume quant à lui n'est jamais le même, seule ce que vous aurez gardé en mémoire avant votre mort resteront pour votre prochain corps.</p>
+                  <p>Le charme de <strong>Dead Cells</strong> se trouve dans sa <strong>progression</strong>, vu que la mort sera récurrente, le royaume quant à lui n'est jamais le même, seule ce que vous aurez gardé en mémoire avant votre mort resteront pour votre prochain corps.</p>
                 </div>
                 <div class="sub-div right border-box">
                   <h3>Souls-lite combat</h3>
                   <hr>
-                  <p>Tout élément du jeu étant unique, l'approche que vous devrez utiliser contre chaque ennemie/boss sera différente et le gameplay de chaque arme/équipement/sort rendra votre run encore plus jouissive que votre précedente. </p>
+                  <p>Tout élément du jeu étant unique, l'approche que vous devrez utiliser contre chaque ennemie/boss sera différente et le gameplay de chaque arme/équipement/sort rendra votre run encore plus captivante que votre précedente. </p>
                 </div>
               </div>
             </div>
@@ -132,168 +136,199 @@
           <iframe src="https://www.youtube.com/embed/yXK00t3HABA" title="Gameplay de Dead Cells" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="fade">
-          <img src="img/o-flou-top-vertical.png" alt="">
+          <img src="img/gb-flou-bot-vertical.png" alt="">
         </div>
       </div>
     </div>
 
     <div class="obiome">
       <div class="bg">
+        <div class="transition">
+          <img src="img/o-transition.png" alt="">
+        </div>
       </div>
-      <div class="corps">
+      <div class="corps" id="collections">
         <div class="subtitle">
           <h2>La collection</h2><br>
         </div>
         <div class="content">
-          <p class="exemple">Petite liste vous montrant le contenu varié que peut proposer Dead Cells.</p>
-          <div class="weapons flex">
-            <div class="big-box border-box">
-              <h3>arme</h3>
-              <hr>
-              <h4>Arc</h4>
-              <div class="simple-flex">
-                <img src="img/arc.png" alt="arc arme">
-                <p>Arc spécial permettant d'infliger plus de dégat grâce à une marque après une courte durée.<br>Si l'ennemi meurt, la marque s'étend.</p>
-              </div>
-                <hr>
-                <h4>Bouclier</h4>
-                <div class="simple-flex">
-                  <img src="img/shiel.png" alt="bouclier arme">
-                  <p>Les attaques bloquées infligent des saignements.<br>Effet étendu aux ennemis proches lors d'une parade réussie. </p>
+          <div class="space-flex media-slide">
+            <div class="slider">
+              <div class="slides weapon">
+                <div class="arc" id="arc">
+                  <h4>Arc</h4>
+                  <div class="simple-flex">
+                    <img src="img/arc.png" alt="">
+                    <p>Arc spécial permettant d'infliger plus de dégat grâce à une marque après une courte durée.<br>Si l'ennemi meurt, la marque s'étend.</p>
+                  </div>
                 </div>
-                <hr>
-                <h4>épée</h4>
-                <div class="simple-flex">
-                  <img src="img/epee.png" alt="épée arme">
-                  <p>Elle provoque des dégâts de saignements constants sur une durée.</p>
+                <div class="bouclier" id="bouclier">
+                  <h4>Bouclier</h4>
+                  <div class="simple-flex">
+                    <img src="img/shiel.png" alt="">
+                    <p>Les attaques bloquées infligent des saignements.<br>Effet étendu aux ennemis proches lors d'une parade réussie. </p>
+                  </div>
                 </div>
-                <hr>
-                <h4>poêle</h4>
-                <div class="simple-flex">
-                  <img src="img/poele.png" alt="poêle arme">
+                <div class="epee" id="epee">
+                  <h4>épée</h4>
+                  <div class="simple-flex">
+                    <img src="img/epee.png" alt="">
+                    <p>Elle provoque des dégâts de saignements constants sur une durée.</p>
+                  </div>
+                </div>
+                <div class="poele" id="poele">
+                  <h4>poêle</h4>
+                  <img src="img/poele.png" alt="">
                   <p>Inflige un coup critique si l'ennemi vous fait face.
                   <br>Ne redouter pas de son apparence</p>
                 </div>
               </div>
-            <div class="big-box border-box">
-              <h3>equipement</h3>
-              <hr>
-              <h4>piège</h4>
-              <div class="simple-flex">
-                <img src="img/piege.png" alt="piege équipement">
-                <p>Lance 2 pièges qui peuvent enraciner les ennemis, leur faisant subir des dégâts.</p>
+              <a href="#arc">1</a>
+              <a href="#bouclier">2</a>
+              <a href="#epee">3</a>
+              <a href="#poele">4</a>
+            </div>
+            <div class="slider">
+              <div class="slides gear">
+                <div class="grenade" id="grenade">
+                  <h4>grenade</h4>
+                  <div class="simple-flex">
+                    <img src="img/grenade.png" alt="">
+                    <p>Gèle ses victimes se trouvant dans son champ d'explosion.</p>
+                  </div>
+                </div>
+                <div class="piege" id="piege">
+                  <h4>piège</h4>
+                  <div class="simple-flex">
+                    <img src="img/piege.png" alt="">
+                    <p>Lance 2 pièges qui peuvent enraciner les ennemis, leur faisant subir des dégâts.</p>
+                  </div>
+                </div>
+                <div class="tourelle" id="tourelle">
+                  <h4>tourelle</h4>
+                  <div class="simple-flex">
+                    <img src="img/tourelle.png" alt="">
+                    <p>Brûle les ennemis proches.</p>
+                  </div>
+                </div>
+                <div class="sort" id="sort">
+                  <h4>sort</h4>
+                  <div class="simple-flex">
+                    <img src="img/tornade.png" alt="">
+                    <p>Inflige des dégâts à toutes les cibles prises à l'intérieur.<br>Change de direction lorsqu'il heurte un mur.</p>
+                  </div>
+                </div>
               </div>
-              <hr>
-              <h4>tourelle</h4>
-              <div class="simple-flex">
-                <img src="img/tourelle.png" alt="tourelle équipement">
-                <p>Brûle les ennemis proches.</p>
-              </div>
-              <hr>
-              <h4>grenade</h4>
-              <div class="simple-flex">
-                <img src="img/grenade.png" alt="grenade équipement">
-                <p>Gèle ses victimes se trouvant dans son champ d'explosion.</p>
-              </div>
-              <hr>
-              <h4>sort</h4>
-              <div class="simple-flex">
-                <img src="img/tornade.png" alt="tornade pouvoir">
-                <p>Inflige des dégâts à toutes les cibles prises à l'intérieur.<br>Change de direction lorsqu'il heurte un mur.</p>
-              </div>
+              <a href="#grenade">1</a>
+              <a href="#piege">2</a>
+              <a href="#tourelle">3</a>
+              <a href="#sort">4</a>
             </div>
           </div>
-          <div class="slider">
-
-            <a href="#slide-1">1</a>
-            <a href="#slide-2">2</a>
-            <a href="#slide-3">3</a>
-            <a href="#slide-4">4</a>
-
-            <div class="slides">
-              <div id="slide-1">
-                <h4>Zombies</h4>
-                <div class="simple-flex">
-                  <img src="img/Zombie.png" alt="zombie ennemi">
-                  <p><strong>Les zombies</strong> sont l'un des premiers ennemis rencontrés par le joueur. Ils fonctionnent comme un attaquant de mêlée de base et sont l'un des ennemis les plus résistants que le joueur rencontrera au début.</p>
+          <div class="space-flex media-slide">
+            <div class="slider">
+              <div class="slides enemy">
+                <div class="zombie" id="Zombie">
+                  <h4>Zombies</h4>
+                  <div class="simple-flex">
+                    <img src="img/Zombie.png" alt="">
+                    <p>Les zombies sont l'un des premiers ennemis rencontrés par le joueur. Ils fonctionnent comme un attaquant de mêlée de base et sont l'un des ennemis les plus résistants que le joueur rencontrera au début.</p>
+                  </div>
+                </div>
+                <div class="grenadier zombie" id="Grenadier">
+                  <h4>Grenadier</h4>
+                  <div class="simple-flex">
+                    <img src="img/Grenadier.png" alt="">
+                    <p>Les grenadiers sont l'un des premiers ennemis à longue portée rencontrés. Ils ont un rayon d'aggro beaucoup plus grand et peuvent voir le joueur à travers les murs et les sols.</p>
+                  </div>
+                </div>
+                <div class="runner" id="Runner">
+                  <h4>Runner</h4>
+                  <div class="simple-flex">
+                    <img src="img/Runner.png" alt="">
+                    <p>Les coureurs n'ont qu'une seule méthode d'attaque au corps à corps, mais ils peuvent se téléporter après le joueur lorsqu'il est trop loin.</p>
+                  </div>
+                </div>
+                <div class="demolisseur" id="Demolisseur">
+                  <h4>Demolisseur</h4>
+                  <div class="simple-flex">
+                    <img src="img/Demolisher.png" alt="">
+                    <p>Les démolisseurs sont des ennemis armés d'une arbalète, qui fonctionne comme une version plus forte et plus difficile des archers morts-vivants.</p>
+                  </div>
                 </div>
               </div>
-              <div id="slide-2">
-                <h4>Grenadier</h4>
-                <div class="simple-flex">
-                  <img src="img/Grenadier.png" alt="grenadier ennemi">
-                  <p><strong>Les grenadiers</strong> sont l'un des premiers ennemis à longue portée rencontrés. Ils ont un rayon d'aggro beaucoup plus grand et peuvent voir le joueur à travers les murs et les sols.</p>
-                </div>
-              </div>
-              <div id="slide-3">
-                <h4>Runner</h4>
-                <div class="simple-flex">
-                  <img src="img/Runner.png" alt="coureur ennemi">
-                  <p><strong>Les coureurs</strong> n'ont qu'une seule méthode d'attaque au corps à corps, mais ils peuvent se téléporter après le joueur lorsqu'il est trop loin.</p>
-                </div>
-              </div>
-              <div id="slide-4">
-                <h4>Demolisseur</h4>
-                <div class="simple-flex">
-                  <img src="img/Demolisher.png" alt="démolisseur ennemi">
-                  <p><strong>Les démolisseurs</strong> sont des ennemis armés d'une arbalète, qui fonctionne comme une version plus forte et plus difficile des archers morts-vivants.</p>
-                </div>
-              </div>
+              <a href="#Zombie">1</a>
+              <a href="#Grenadier">2</a>
+              <a href="#Runner">3</a>
+              <a href="#Demolisseur">4</a>
             </div>
-          </div>
-            <div class="bosses big-box border-box">
-              <h3>Boss</h3>
-              <hr>
-              <h4>Le Concierge</h4>
-              <div class="boss1 simple-flex">
-                <div class="boss1-pic">
-                  <img src="img/firstb.png" alt="concierge boss">
+
+            <div class="slider">
+              <div class="slides boss">
+                <div class="concierge" id="concierge">
+                  <h4>Le Concierge</h4>
+                  <div class="boss1 simple-flex">
+                    <div class="boss1-pic">
+                      <img src="img/firstb.png" alt="">
+                    </div>
+                    <div class="switch">
+                      <p>Le Concierge est le premier boss de niveau 1 du jeu. Il est rencontré sur le Pont Noir.</p>
+                      <div class="media" id="description">
+                        <img src="img/concierge1.gif" alt="">
+                        <img src="img/concierge2.gif" alt="">
+                        <img src="img/concierge3.gif" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="switch">
-                  <p><strong>Le Concierge</strong> est le premier boss de niveau 1 du jeu. Il est rencontré sur le Pont Noir.</p>
-                  <div class="media" id="description">
-                    <img src="img/concierge1.gif" alt="concierge boss gif">
-                    <img src="img/concierge2.gif" alt="concierge boss gif">
-                    <img src="img/concierge3.gif" alt="concierge boss gif">
+                <div class="geant" id="geant">
+                  <h4>Le géant</h4>
+                  <div class="boss2 simple-flex">
+                    <div class="boss2-pic">
+                      <img src="img/giant.png" alt="">
+                    </div>
+                    <div class="switch">
+                      <p>Le Géant est un boss spécial de niveau 2 dans le jeu.</p>
+                      <div class="media" id="description">
+                        <img src="img/giant1.gif" alt="">
+                        <img src="img/giant2.gif" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hand" id="hand">
+                  <h4>La main du roi</h4>
+                  <div class="boss3 simple-flex">
+                    <div class="boss3-pic">
+                      <img src="img/lastb.png" alt="">
+                    </div>
+                    <div class="switch">
+                      <p>La Main du Roi est le boss final du jeu. Il est rencontré dans la salle du trône.</p>
+                      <div class="media" id="description">
+                        <img src="img/hand1.gif" alt="">
+                        <img src="img/hand3.gif" alt="">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <hr>
-              <h4>Le géant</h4>
-              <div class="boss2 simple-flex">
-                <div class="boss2-pic">
-                  <img src="img/giant.png" alt="géant boss">
-                </div>
-                <div class="switch">
-                  <p><strong>Le Géant</strong> est un boss spécial de niveau 2 dans le jeu.</p>
-                  <div class="media" id="description">
-                    <img src="img/giant1.gif" alt="géant boss gif">
-                    <img src="img/giant2.gif" alt="géant boss gif">
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <h4>La main du roi</h4>
-              <div class="boss3 simple-flex">
-                <div class="boss3-pic">
-                  <img src="img/lastb.png" alt="la main du roi boss">
-                </div>
-                <div class="switch">
-                  <p><strong>La Main du Roi</strong> est le boss final du jeu. Il est rencontré dans la salle du trône.</p>
-                  <div class="media" id="description">
-                    <img src="img/hand1.gif" alt="la main du roi boss gif">
-                    <img src="img/hand3.gif" alt="la main du roi boss gif">
-                  </div>
-                </div>
-              </div>
+              <a href="#concierge">1</a>
+              <a href="#geant">2</a>
+              <a href="#hand">3</a>
             </div>
           </div>
         </div>
       </div>
+      <div class="bg">
+        <div class="transition">
+          <img src="img/f-transition.png" alt="">
+        </div>
+      </div>
     </div>
-    <div class="info" id="bottom">
+
+    <footer class="info" id="footer">
       <div class="about-us">
-        <p>Site créé pour un projet d'étude supervisé par un intervenant du Gaming Campus : <a href="https://www.linkedin.com/in/antoine-di-roberto-8aa93768/" target="_blank" rel="nofollow">Antoine DI ROBERTO</a></p>
+        <p>Site créé pour un projet d'étude supervisé  par <a href="https://www.linkedin.com/in/antoine-di-roberto-8aa93768/" target="_blank" rel="nofollow">Antoine DI ROBERTO</a> du <a href="https://gamingcampus.fr/" target="_blank" rel="nofollow">Gaming Campus</a>.</p>
         <hr><br>
         <ul>
           <li>Quentin RIPOT</li>
@@ -320,6 +355,6 @@
           </div>
         </form>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
